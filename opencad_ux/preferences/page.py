@@ -377,7 +377,7 @@ class SettingsDialog(QtWidgets.QDialog):
         QtWidgets.QMessageBox.information(
             self, "Check updates",
             "Current version: %s\n\nReleases are published on GitHub: "
-            "https://github.com/OpenCAD-UX/OpenCAD-UX/releases\n\n"
+            "https://github.com/SvenKunkka/OpenCAD-UX/releases\n\n"
             "Note: 'Check updates' opens the releases page in your browser."
             % __version__)
-        webbrowser.open("https://github.com/OpenCAD-UX/OpenCAD-UX/releases")
+        webbrowser.open("https://github.com/SvenKunkka/OpenCAD-UX/releases")

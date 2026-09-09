@@ -13,7 +13,7 @@ FreeCAD itself. Please report security issues privately instead of opening a
 public issue:
 
 - open a **GitHub Security Advisory** at
-  https://github.com/OpenCAD-UX/OpenCAD-UX/security/advisories/new, or
+  https://github.com/SvenKunkka/OpenCAD-UX/security/advisories/new, or
 - email the maintainers (address published on the GitHub profile page).
 
 Please include: FreeCAD version + OS, the add-on version, a minimal

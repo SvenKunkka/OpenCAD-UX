@@ -15,14 +15,15 @@
 
   <author>OpenCAD UX contributors</author>
 
-  <maintainer email="opencad-ux@example.invalid">OpenCAD UX contributors</maintainer>
+  <maintainer email="16517426+SvenKunkka@users.noreply.github.com">Yujian (SvenKunkka)</maintainer>
 
   <license file="LICENSE">GPL-3.0-or-later</license>
 
-  <url type="website">https://github.com/OpenCAD-UX/OpenCAD-UX</url>
-  <url type="repository">https://github.com/OpenCAD-UX/OpenCAD-UX</url>
-  <url type="readme">https://github.com/OpenCAD-UX/OpenCAD-UX/blob/main/README.md</url>
-  <url type="bugtracker">https://github.com/OpenCAD-UX/OpenCAD-UX/issues</url>
+  <url type="website">https://github.com/SvenKunkka/OpenCAD-UX</url>
+  <url branch="main" type="repository">https://github.com/SvenKunkka/OpenCAD-UX</url>
+  <url type="readme">https://github.com/SvenKunkka/OpenCAD-UX/blob/main/README.md</url>
+  <url type="bugtracker">https://github.com/SvenKunkka/OpenCAD-UX/issues</url>
+  <url type="icon">https://raw.githubusercontent.com/SvenKunkka/OpenCAD-UX/main/resources/icons/product-design.svg</url>
 
   <icon>resources/icons/product-design.svg</icon>
 
@@ -35,8 +36,6 @@
     </workbench>
   </content>
 
-  <depend type="addon" optional="true">freecad.asm3</depend>
-
   <keywords>
     <keyword>Product Design</keyword>
     <keyword>Ribbon</keyword>
@@ -45,5 +44,6 @@
     <keyword>reference images</keyword>
     <keyword>command search</keyword>
     <keyword>theme</keyword>
+    <keyword>workbench</keyword>
   </keywords>
 </package>
