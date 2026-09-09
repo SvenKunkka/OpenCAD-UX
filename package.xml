@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+
+  <name>OpenCAD UX</name>
+
+  <description>A Fusion-inspired Product Design workspace for FreeCAD: ribbon UI,
+  original light/dark themes, keymap &amp; mouse-navigation presets, bilingual
+  command search, context actions and reference-image workflow. Built for
+  consumer-electronics ID/mechanical design (keyboards, mice, headsets,
+  receivers, charging docks, enclosures).</description>
+
+  <version>0.1.0</version>
+
+  <date>2026-09-09</date>
+
+  <author>OpenCAD UX contributors</author>
+
+  <maintainer email="opencad-ux@example.invalid">OpenCAD UX contributors</maintainer>
+
+  <license file="LICENSE">GPL-3.0-or-later</license>
+
+  <url type="website">https://github.com/OpenCAD-UX/OpenCAD-UX</url>
+  <url type="repository">https://github.com/OpenCAD-UX/OpenCAD-UX</url>
+  <url type="readme">https://github.com/OpenCAD-UX/OpenCAD-UX/blob/main/README.md</url>
+  <url type="bugtracker">https://github.com/OpenCAD-UX/OpenCAD-UX/issues</url>
+
+  <icon>resources/icons/product-design.svg</icon>
+
+  <content>
+    <workbench>
+      <freecadmin>1.0.0</freecadmin>
+      <icon>resources/icons/product-design.svg</icon>
+      <classname>OpenCADUXWorkbench</classname>
+      <subdirectory>./</subdirectory>
+    </workbench>
+  </content>
+
+  <depend type="addon" optional="true">freecad.asm3</depend>
+
+  <keywords>
+    <keyword>Product Design</keyword>
+    <keyword>Ribbon</keyword>
+    <keyword>Fusion-inspired</keyword>
+    <keyword>consumer electronics</keyword>
+    <keyword>reference images</keyword>
+    <keyword>command search</keyword>
+    <keyword>theme</keyword>
+  </keywords>
+</package>

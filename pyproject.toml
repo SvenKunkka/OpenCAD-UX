@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencad-ux"
+version = "0.1.0"
+description = "Fusion-inspired Product Design workspace for FreeCAD (ribbon UI, themes, keymaps, command search, reference images)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [{ name = "OpenCAD UX contributors" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+# NOTE: this project is a FreeCAD addon: it runs inside FreeCAD's bundled
+# Python (which provides FreeCAD, FreeCADGui, PySide). These extras are only
+# used by the *standalone* test-suite executed with a plain interpreter.
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["opencad_ux"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

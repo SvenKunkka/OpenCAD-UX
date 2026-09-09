@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pure-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.11']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Pure unit tests
+        run: bash scripts/run_pure_tests.sh
+
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Static checks (syntax, icons, schema)
+        run: bash scripts/check_static.sh
+
+  freecad-console:
+    # Runs the console integration suite against a real FreeCAD. This job is
+    # a convenience target; the suite is also part of release verification.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install FreeCAD via conda (experimental)
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: '3.11'
+          auto-update-conda: false
+          channels: conda-forge
+          channel-priority: strict
+      - name: Install freecad package
+        shell: bash -el {0}
+        run: conda install -y -c conda-forge freecad=1.0.*
+      - name: Console test suite
+        shell: bash -el {0}
+        env:
+          FC_CMD: "$CONDA_PREFIX/bin/freecadcmd"
+        run: |
+          if [ ! -x "$FC_CMD" ]; then
+            echo "no freecadcmd in conda env - skipping (suite runs at release time)"
+            exit 0
+          fi
+          bash scripts/run_console_tests.sh
+
+  package:
+    runs-on: ubuntu-latest
+    needs: [pure-tests, static-checks]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build distributable ZIP
+        run: bash scripts/make_zip.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpenCAD-UX-dist
+          path: dist/*.zip

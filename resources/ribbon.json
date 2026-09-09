@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "addon": "OpenCAD UX",
+  "description": "Ribbon definition for the Product Design workspace. Buttons invoke real FreeCAD commands resolved by opencad_ux.commands.adapters (canonical id -> ordered candidate FreeCAD command ids / python fallback).",
+  "groups": [
+    {
+      "id": "sketch",
+      "label": { "en": "Sketch", "zh": "草图" },
+      "buttons": [
+        { "id": "new_sketch", "label": { "en": "Create Sketch", "zh": "新建草图" }, "cmd": "Sketcher_NewSketch", "icon": "new_sketch", "keywords": ["new sketch", "新建草图", "草图"], "hint_shortcut": "" },
+        { "id": "line", "label": { "en": "Line", "zh": "直线" }, "cmd": "line", "icon": "line", "keywords": ["line", "直线", "线段"], "hint_shortcut": "L" },
+        { "id": "rectangle", "label": { "en": "Rectangle", "zh": "矩形" }, "cmd": "rectangle", "icon": "rectangle", "keywords": ["rectangle", "矩形", "长方形"], "hint_shortcut": "R" },
+        { "id": "circle", "label": { "en": "Circle", "zh": "圆" }, "cmd": "circle", "icon": "circle", "keywords": ["circle", "圆"], "hint_shortcut": "C" },
+        { "id": "arc", "label": { "en": "Arc", "zh": "圆弧" }, "cmd": "arc", "icon": "arc", "keywords": ["arc", "圆弧"], "hint_shortcut": "" },
+        { "id": "spline", "label": { "en": "Spline", "zh": "样条曲线" }, "cmd": "spline", "icon": "spline", "keywords": ["spline", "样条", "样条曲线"], "hint_shortcut": "" },
+        { "id": "trim", "label": { "en": "Trim", "zh": "修剪" }, "cmd": "trim", "icon": "trim", "keywords": ["trim", "extend", "修剪", "裁剪"], "hint_shortcut": "" },
+        { "id": "offset", "label": { "en": "Offset", "zh": "偏移" }, "cmd": "offset", "icon": "offset", "keywords": ["offset", "偏移"], "hint_shortcut": "" },
+        { "id": "project", "label": { "en": "Project Geometry", "zh": "投影几何" }, "cmd": "project", "icon": "project", "keywords": ["project", "external", "投影", "参考几何"], "hint_shortcut": "P" },
+        { "id": "dimension", "label": { "en": "Dimension", "zh": "尺寸标注" }, "cmd": "dimension", "icon": "dimension", "keywords": ["dimension", "constrain distance", "尺寸", "标注"], "hint_shortcut": "D" }
+      ]
+    },
+    {
+      "id": "constraints",
+      "label": { "en": "Constraints", "zh": "约束" },
+      "buttons": [
+        { "id": "constrain_coincident", "label": { "en": "Coincident", "zh": "重合" }, "cmd": "Sketcher_ConstrainCoincident", "icon": "constrain_coincident", "keywords": ["coincident", "point on point", "重合"], "hint_shortcut": "" },
+        { "id": "constrain_horizontal", "label": { "en": "Horizontal", "zh": "水平" }, "cmd": "Sketcher_ConstrainHorizontal", "icon": "constrain_horizontal", "keywords": ["horizontal", "水平"], "hint_shortcut": "" },
+        { "id": "constrain_vertical", "label": { "en": "Vertical", "zh": "垂直(约束)" }, "cmd": "Sketcher_ConstrainVertical", "icon": "constrain_vertical", "keywords": ["vertical", "竖直", "垂直约束"], "hint_shortcut": "" },
+        { "id": "constrain_tangent", "label": { "en": "Tangent", "zh": "相切" }, "cmd": "Sketcher_ConstrainTangent", "icon": "constrain_tangent", "keywords": ["tangent", "相切"], "hint_shortcut": "" },
+        { "id": "constrain_perpendicular", "label": { "en": "Perpendicular", "zh": "正交(约束)" }, "cmd": "Sketcher_ConstrainPerpendicular", "icon": "constrain_perpendicular", "keywords": ["perpendicular", "垂直", "正交"], "hint_shortcut": "" },
+        { "id": "constrain_parallel", "label": { "en": "Parallel", "zh": "平行" }, "cmd": "Sketcher_ConstrainParallel", "icon": "constrain_parallel", "keywords": ["parallel", "平行"], "hint_shortcut": "" },
+        { "id": "constrain_lock", "label": { "en": "Lock", "zh": "锁定约束" }, "cmd": "Sketcher_ConstrainLock", "icon": "constrain_lock", "keywords": ["lock", "锁定"], "hint_shortcut": "" }
+      ]
+    },
+    {
+      "id": "create",
+      "label": { "en": "Create", "zh": "创建" },
+      "buttons": [
+        { "id": "box", "label": { "en": "Box", "zh": "长方体" }, "cmd": "box", "icon": "box", "keywords": ["box", "cube", "长方体", "方块"], "hint_shortcut": "" },
+        { "id": "cylinder", "label": { "en": "Cylinder", "zh": "圆柱体" }, "cmd": "cylinder", "icon": "cylinder", "keywords": ["cylinder", "圆柱"], "hint_shortcut": "" },
+        { "id": "sphere", "label": { "en": "Sphere", "zh": "球体" }, "cmd": "sphere", "icon": "sphere", "keywords": ["sphere", "球", "球体"], "hint_shortcut": "" },
+        { "id": "pad", "label": { "en": "Extrude / Pad", "zh": "拉伸" }, "cmd": "pad", "icon": "pad", "keywords": ["pad", "extrude", "拉伸", "凸台", "挤出"], "hint_shortcut": "E" },
+        { "id": "revolve", "label": { "en": "Revolve", "zh": "旋转" }, "cmd": "revolve", "icon": "revolve", "keywords": ["revolve", "旋转", "回转"], "hint_shortcut": "" },
+        { "id": "sweep", "label": { "en": "Sweep / Pipe", "zh": "扫掠" }, "cmd": "sweep", "icon": "sweep", "keywords": ["sweep", "pipe", "扫掠", "管道"], "hint_shortcut": "" },
+        { "id": "loft", "label": { "en": "Loft", "zh": "放样" }, "cmd": "loft", "icon": "loft", "keywords": ["loft", "放样"], "hint_shortcut": "" },
+        { "id": "hole", "label": { "en": "Hole", "zh": "孔" }, "cmd": "hole", "icon": "hole", "keywords": ["hole", "孔", "钻孔"], "hint_shortcut": "H" }
+      ]
+    },
+    {
+      "id": "modify",
+      "label": { "en": "Modify", "zh": "修改" },
+      "buttons": [
+        { "id": "fillet", "label": { "en": "Fillet", "zh": "圆角" }, "cmd": "fillet", "icon": "fillet", "keywords": ["fillet", "round", "圆角"], "hint_shortcut": "F" },
+        { "id": "chamfer", "label": { "en": "Chamfer", "zh": "倒角" }, "cmd": "chamfer", "icon": "chamfer", "keywords": ["chamfer", "bevel", "倒角", "斜角"], "hint_shortcut": "" },
+        { "id": "thickness", "label": { "en": "Shell / Thickness", "zh": "抽壳" }, "cmd": "thickness", "icon": "thickness", "keywords": ["shell", "thickness", "hollow", "抽壳", "外壳", "厚度"], "hint_shortcut": "" },
+        { "id": "draft_angle", "label": { "en": "Draft", "zh": "拔模" }, "cmd": "draft_angle", "icon": "draft_angle", "keywords": ["draft", "draft angle", "拔模", "脱模"], "hint_shortcut": "" },
+        { "id": "mirror", "label": { "en": "Mirror", "zh": "镜像" }, "cmd": "mirror", "icon": "mirror", "keywords": ["mirror", "镜像"], "hint_shortcut": "" },
+        { "id": "linear_pattern", "label": { "en": "Linear Pattern", "zh": "线性阵列" }, "cmd": "linear_pattern", "icon": "linear_pattern", "keywords": ["linear pattern", "linear", "线性阵列", "阵列"], "hint_shortcut": "" },
+        { "id": "circular_pattern", "label": { "en": "Circular Pattern", "zh": "环形阵列" }, "cmd": "circular_pattern", "icon": "circular_pattern", "keywords": ["circular pattern", "polar", "环形阵列", "圆周阵列", "极轴阵列"], "hint_shortcut": "" },
+        { "id": "move_face", "label": { "en": "Move Face", "zh": "移动面" }, "cmd": "move_face", "icon": "move_face", "keywords": ["move face", "移动面", "推拉"], "hint_shortcut": "" },
+        { "id": "offset_face", "label": { "en": "Offset Face", "zh": "偏移面" }, "cmd": "offset_face", "icon": "offset_face", "keywords": ["offset face", "face offset", "偏移面"], "hint_shortcut": "" },
+        { "id": "transform", "label": { "en": "Transform", "zh": "移动/变换" }, "cmd": "transform", "icon": "transform", "keywords": ["move", "transform", "translate", "rotate", "移动", "变换", "旋转移动"], "hint_shortcut": "M" }
+      ]
+    },
+    {
+      "id": "combine",
+      "label": { "en": "Combine", "zh": "组合" },
+      "buttons": [
+        { "id": "boolean_union", "label": { "en": "Union", "zh": "并集" }, "cmd": "boolean_union", "icon": "boolean_union", "keywords": ["union", "fuse", "merge", "合并", "并集", "融合"], "hint_shortcut": "" },
+        { "id": "boolean_cut", "label": { "en": "Cut", "zh": "差集" }, "cmd": "boolean_cut", "icon": "boolean_cut", "keywords": ["cut", "subtract", "difference", "差集", "切割", "减去"], "hint_shortcut": "" },
+        { "id": "boolean_intersection", "label": { "en": "Intersection", "zh": "交集" }, "cmd": "boolean_intersection", "icon": "boolean_intersection", "keywords": ["intersection", "common", "交集"], "hint_shortcut": "" },
+        { "id": "split_body", "label": { "en": "Split Body", "zh": "拆分" }, "cmd": "split_body", "icon": "split_body", "keywords": ["split", "explode", "拆分", "分解"], "hint_shortcut": "" },
+        { "id": "slice", "label": { "en": "Slice", "zh": "切片" }, "cmd": "slice", "icon": "slice", "keywords": ["slice", "cut plane", "切片", "剖切"], "hint_shortcut": "" },
+        { "id": "refine", "label": { "en": "Refine Shape", "zh": "精炼形状" }, "cmd": "refine", "icon": "refine", "keywords": ["refine", "clean", "优化", "精炼", "清理"], "hint_shortcut": "" }
+      ]
+    },
+    {
+      "id": "inspect",
+      "label": { "en": "Inspect", "zh": "检查" },
+      "buttons": [
+        { "id": "measure", "label": { "en": "Measure", "zh": "测量" }, "cmd": "measure", "icon": "measure", "keywords": ["measure", "distance", "测量", "量测"], "hint_shortcut": "" },
+        { "id": "section_view", "label": { "en": "Section View", "zh": "剖面视图" }, "cmd": "section_view", "icon": "section_view", "keywords": ["section", "cross section", "剖面", "截面"], "hint_shortcut": "" },
+        { "id": "bounding_box", "label": { "en": "Bounding Box", "zh": "包围盒" }, "cmd": "bounding_box", "icon": "bounding_box", "keywords": ["bounding box", "bBox", "包围盒", "边界框"], "hint_shortcut": "" },
+        { "id": "mass_properties", "label": { "en": "Mass Properties", "zh": "质量属性" }, "cmd": "mass_properties", "icon": "mass_properties", "keywords": ["mass", "volume", "area", "density", "质量属性", "体积", "质量"], "hint_shortcut": "" },
+        { "id": "geometry_check", "label": { "en": "Geometry Check", "zh": "几何检查" }, "cmd": "geometry_check", "icon": "geometry_check", "keywords": ["check geometry", "validate", "几何检查", "检查几何"], "hint_shortcut": "" },
+        { "id": "interference", "label": { "en": "Interference Check", "zh": "干涉检查" }, "cmd": "interference", "icon": "interference", "keywords": ["interference", "clash", "干涉", "碰撞检查"], "hint_shortcut": "" }
+      ]
+    },
+    {
+      "id": "insert_export",
+      "label": { "en": "Insert / Export", "zh": "插入/导出" },
+      "buttons": [
+        { "id": "import_ref_image", "label": { "en": "Reference Image", "zh": "参考图片" }, "cmd": "import_ref_image", "icon": "import_ref_image", "keywords": ["reference image", "background image", "image plane", "参考图", "背景图", "图片"], "hint_shortcut": "" },
+        { "id": "import_step", "label": { "en": "Import STEP", "zh": "导入STEP" }, "cmd": "import_step", "icon": "import_step", "keywords": ["import step", "导入 step", "导入模型"], "hint_shortcut": "" },
+        { "id": "export_step", "label": { "en": "Export STEP", "zh": "导出STEP" }, "cmd": "export_step", "icon": "export_step", "keywords": ["export step", "导出 step", "step"], "hint_shortcut": "" },
+        { "id": "export_stl", "label": { "en": "Export STL", "zh": "导出STL" }, "cmd": "export_stl", "icon": "export_stl", "keywords": ["export stl", "stl", "3d print", "导出 stl", "3d打印"], "hint_shortcut": "" },
+        { "id": "export_obj", "label": { "en": "Export OBJ", "zh": "导出OBJ" }, "cmd": "export_obj", "icon": "export_obj", "keywords": ["export obj", "obj", "mesh", "导出 obj", "网格"], "hint_shortcut": "" },
+        { "id": "export_dxf", "label": { "en": "Export DXF", "zh": "导出DXF" }, "cmd": "export_dxf", "icon": "export_dxf", "keywords": ["export dxf", "dxf", "2d", "导出 dxf", "二维"], "hint_shortcut": "" }
+      ]
+    }
+  ]
+}

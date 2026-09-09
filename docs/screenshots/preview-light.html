@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;background:#eef0f3;font-family:-apple-system,'Segoe UI',
+    Roboto,sans-serif;color:#20242b;}
+.top{height:64px;background:#eef0f3;border-bottom:1px solid #d4d9df;
+    display:flex;align-items:center;padding:0 12px;gap:10px;}
+.top .brand{font-size:15px;font-weight:600;}
+.top input{margin-left:auto;width:220px;background:#ffffff;color:#20242b;
+    border:1px solid #d4d9df;border-radius:6px;padding:5px 8px;}
+.scroll{overflow-x:auto;padding:8px;white-space:nowrap;}
+.grp{display:inline-block;vertical-align:top;background:#f7f8fa;
+    border:1px solid #d4d9df;border-radius:8px;padding:6px;margin-right:8px;}
+.gh{font-size:11px;text-align:center;opacity:.8;padding-bottom:2px;
+    border-bottom:1px dashed #d4d9df;margin-bottom:4px;white-space:normal;}
+.btn{display:inline-flex;flex-direction:column;align-items:center;margin:2px;
+    padding:6px 4px;border-radius:6px;width:64px;white-space:normal;}
+.btn:hover{background:#dfe7fb;}
+.btn .lbl{font-size:10px;text-align:center;line-height:1.1;}
+.btn .sc{margin-left:2px;color:#2f6fed;font-weight:bold;}
+.cap{margin:10px 16px;font-size:11px;opacity:.7;}
+</style></head><body>
+<div class="top">
+  <img src="file:///Users/keychron/PRD/产品智能助手/OpenCAD-UX/resources/icons/light/product-design.svg"
+       width="26" height="26" alt="OpenCAD UX"/>
+  <span class="brand">OpenCAD UX - Product Design&nbsp;&nbsp;·&nbsp;&nbsp;OpenCAD Light</span>
+  <input type="text" placeholder="Search commands…  /  输入命令搜索"/>
+</div>
+<div class="scroll"><div class="grp"><div class="gh">Sketch &nbsp;|&nbsp; 草图</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="14,2 20,8 8,20 2,14"/>
+<polyline points="2,14 4,10 14,2"/>
+<rect x="12" y="12" width="8" height="8"/>
+</g>
+</svg>
+<div class="lbl">Create Sketch</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="6" y1="24" x2="24" y2="6"/>
+</g>
+</svg>
+<div class="lbl">Line<span class="sc">L</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="5" y="6" width="20" height="16"/>
+</g>
+</svg>
+<div class="lbl">Rectangle<span class="sc">R</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="9"/>
+</g>
+</svg>
+<div class="lbl">Circle<span class="sc">C</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M 3.93692,24.2262 A 10 10 0 0 1 22.0631,24.2262" />
+<line x1="13" y1="20" x2="15" y2="4"/>
+<polyline points="10,7 15,1 20,7"/>
+</g>
+</svg>
+<div class="lbl">Arc</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,19 10,5 16,25 26,9"/>
+</g>
+</svg>
+<div class="lbl">Spline</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="14" y1="4" x2="26" y2="20"/>
+<line x1="26" y1="4" x2="14" y2="20"/>
+<line x1="4" y1="26" x2="24" y2="6"/>
+</g>
+</svg>
+<div class="lbl">Trim</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="2,22 8,10 14,14 18,8"/>
+<polyline points="6,26 12,14 18,18 24,10"/>
+</g>
+</svg>
+<div class="lbl">Offset</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,15 5,26 26,26 26,15"/>
+<line x1="15" y1="15" x2="15" y2="5"/>
+<circle cx="15" cy="3" r="2"/>
+<polyline points="10,15 10,22 20,22 20,15"/>
+</g>
+</svg>
+<div class="lbl">Project Geometry<span class="sc">P</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="5" y1="5" x2="5" y2="24"/>
+<line x1="22" y1="5" x2="22" y2="24"/>
+<line x1="5" y1="15" x2="22" y2="15"/>
+<line x1="9" y1="11" x2="9" y2="19"/>
+<line x1="18" y1="11" x2="18" y2="19"/>
+</g>
+</svg>
+<div class="lbl">Dimension<span class="sc">D</span></div></div></div><div class="grp"><div class="gh">Constraints &nbsp;|&nbsp; 约束</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="9" cy="9" r="4"/>
+<circle cx="20" cy="20" r="4"/>
+</g>
+</svg>
+<div class="lbl">Coincident</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="4" y1="8" x2="24" y2="8"/>
+<polyline points="19,3 24,8 19,13"/>
+</g>
+</svg>
+<div class="lbl">Horizontal</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="8" y1="4" x2="8" y2="24"/>
+<polyline points="3,19 8,24 13,19"/>
+</g>
+</svg>
+<div class="lbl">Vertical</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,18 12,4 16,4"/>
+<polyline points="24,10 24,18 16,24"/>
+<line x1="16" y1="4" x2="24" y2="10"/>
+</g>
+</svg>
+<div class="lbl">Tangent</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="4" y1="20" x2="20" y2="4"/>
+<line x1="14" y1="8" x2="16" y2="10"/>
+<line x1="4" y1="20" x2="26" y2="24"/>
+</g>
+</svg>
+<div class="lbl">Perpendicular</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="4" y1="6" x2="20" y2="12"/>
+<line x1="4" y1="18" x2="24" y2="24"/>
+<line x1="20" y1="12" x2="24" y2="14"/>
+</g>
+</svg>
+<div class="lbl">Parallel</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="8" y="12" width="14" height="11"/>
+<polyline points="11,12 11,8 13,5 17,5 19,8 19,12"/>
+</g>
+</svg>
+<div class="lbl">Lock</div></div></div><div class="grp"><div class="gh">Create &nbsp;|&nbsp; 创建</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,5 22,5 22,18 5,18"/>
+<polyline points="5,5 2,21 19,25 22,18"/>
+<line x1="5" y1="18" x2="2" y2="21"/>
+</g>
+</svg>
+<div class="lbl">Box</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M 23,8 A 9 5 0 1 1 23,8" />
+<path d="M 23,22 A 9 5 0 1 1 23,22" />
+<line x1="5" y1="8" x2="5" y2="22"/>
+<line x1="23" y1="8" x2="23" y2="22"/>
+</g>
+</svg>
+<div class="lbl">Cylinder</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="10"/>
+<path d="M 15,5 A 5 10 0 0 1 15,25" />
+<path d="M 25,15 A 10 5 0 1 1 25,15" />
+</g>
+</svg>
+<div class="lbl">Sphere</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="6,25 6,10 14,4 22,10 22,25"/>
+<line x1="6" y1="10" x2="22" y2="10"/>
+</g>
+</svg>
+<div class="lbl">Extrude / Pad<span class="sc">E</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="14,26 14,6"/>
+<path d="M 5.30667,21.2941 A 9 5 0 0 1 22.4572,21.7101" />
+<polyline points="9,8 14,2 19,8"/>
+</g>
+</svg>
+<div class="lbl">Revolve</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="6,22 6,14 19,14"/>
+<circle cx="20" cy="14" r="3.4"/>
+<line x1="23" y1="14" x2="26" y2="14"/>
+<polyline points="9,4 5,8 9,12"/>
+</g>
+</svg>
+<div class="lbl">Sweep / Pipe</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,5 12,5 12,23 5,23"/>
+<polyline points="14,8 24,10 20,21 12,21"/>
+<line x1="12" y1="5" x2="14" y2="8"/>
+<line x1="12" y1="23" x2="12" y2="21"/>
+</g>
+</svg>
+<div class="lbl">Loft</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="9"/>
+<circle cx="15" cy="15" r="4.5"/>
+</g>
+</svg>
+<div class="lbl">Hole<span class="sc">H</span></div></div></div><div class="grp"><div class="gh">Modify &nbsp;|&nbsp; 修改</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,26 5,10 10,5 26,5 26,26"/>
+<path d="M 5,5 A 21 21 0 0 1 -16,26" />
+</g>
+</svg>
+<div class="lbl">Fillet<span class="sc">F</span></div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,5 23,5 23,23 5,23"/>
+<line x1="5" y1="5" x2="23" y2="23"/>
+</g>
+</svg>
+<div class="lbl">Chamfer</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,7 24,7 24,25 4,25"/>
+<polyline points="9,7 9,19 20,19 20,7"/>
+<line x1="4" y1="2" x2="24" y2="2"/>
+</g>
+</svg>
+<div class="lbl">Shell / Thickness</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="7,4 18,4 24,25 9,25"/>
+<polyline points="12,8 17,8 20,20"/>
+<line x1="4" y1="25" x2="26" y2="25"/>
+</g>
+</svg>
+<div class="lbl">Draft</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,6 12,6 12,22 4,22"/>
+<polyline points="14,6 26,6 26,22 14,22"/>
+<line x1="14" y1="4" x2="14" y2="24"/>
+</g>
+</svg>
+<div class="lbl">Mirror</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="6,13 6,24 17,24 17,13"/>
+<polyline points="16,9 16,4 25,4 25,12"/>
+<polyline points="10,6 13,2 20,2 23,6"/>
+</g>
+</svg>
+<div class="lbl">Linear Pattern</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="10"/>
+<polyline points="15,15 15,4"/>
+<polyline points="15,4 24,9 15,15"/>
+</g>
+</svg>
+<div class="lbl">Circular Pattern</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="3,16 9,3 20,8 20,18"/>
+<line x1="20" y1="8" x2="26" y2="6"/>
+<polyline points="20,18 22,23 25,21"/>
+</g>
+</svg>
+<div class="lbl">Move Face</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,13 12,4 24,4 24,16 16,24 4,24"/>
+<polyline points="10,13 14,9 21,9"/>
+</g>
+</svg>
+<div class="lbl">Offset Face</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="7,3 7,21 15,26"/>
+<circle cx="9" cy="9" r="2"/>
+<polyline points="11,5 24,12"/>
+<circle cx="20" cy="16" r="2.6"/>
+</g>
+</svg>
+<div class="lbl">Transform<span class="sc">M</span></div></div></div><div class="grp"><div class="gh">Combine &nbsp;|&nbsp; 组合</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="11" cy="15" r="8"/>
+<circle cx="19" cy="15" r="8"/>
+</g>
+</svg>
+<div class="lbl">Union</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="11" cy="15" r="8"/>
+<polyline points="14,9 24,9 24,24 14,24"/>
+<line x1="16" y1="13" x2="22" y2="20"/>
+</g>
+</svg>
+<div class="lbl">Cut</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="11" cy="15" r="8"/>
+<circle cx="19" cy="15" r="8"/>
+<circle cx="15" cy="15" r="3.4"/>
+</g>
+</svg>
+<div class="lbl">Intersection</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="5" y="5" width="18" height="18"/>
+<line x1="5" y1="5" x2="23" y2="23"/>
+<circle cx="23" cy="5" r="2.6"/>
+<circle cx="5" cy="23" r="2.6"/>
+</g>
+</svg>
+<div class="lbl">Split Body</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="5,4 23,4 23,24 5,24"/>
+<polyline points="9,4 20,24"/>
+</g>
+</svg>
+<div class="lbl">Slice</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="3,21 3,7 27,7 27,21"/>
+<line x1="6" y1="14" x2="24" y2="14"/>
+<circle cx="9" cy="10" r="2"/>
+<circle cx="21" cy="10" r="2"/>
+<circle cx="15" cy="18" r="2"/>
+</g>
+</svg>
+<div class="lbl">Refine Shape</div></div></div><div class="grp"><div class="gh">Inspect &nbsp;|&nbsp; 检查</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<line x1="4" y1="24" x2="22" y2="6"/>
+<polyline points="18,6 22,6 22,10"/>
+<polyline points="4,20 4,24 8,24"/>
+</g>
+</svg>
+<div class="lbl">Measure</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="11"/>
+<line x1="15" y1="4" x2="15" y2="26"/>
+<line x1="4" y1="15" x2="26" y2="15"/>
+</g>
+</svg>
+<div class="lbl">Section View</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="7,7 24,7 24,24 7,24"/>
+<polyline points="7,7 2,2 19,2 24,7"/>
+<line x1="2" y1="22" x2="7" y2="24"/>
+</g>
+</svg>
+<div class="lbl">Bounding Box</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="10"/>
+<line x1="15" y1="15" x2="22" y2="9"/>
+</g>
+</svg>
+<div class="lbl">Mass Properties</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="15" cy="15" r="11"/>
+<circle cx="15" cy="15" r="7"/>
+<circle cx="15" cy="15" r="2.6"/>
+</g>
+</svg>
+<div class="lbl">Geometry Check</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="11" cy="15" r="8"/>
+<circle cx="19" cy="15" r="8"/>
+<circle cx="15" cy="15" r="3.2"/>
+</g>
+</svg>
+<div class="lbl">Interference Check</div></div></div><div class="grp"><div class="gh">Insert / Export &nbsp;|&nbsp; 插入/导出</div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="4" y="10" width="18" height="12"/>
+<rect x="8" y="14" width="10" height="8"/>
+<line x1="4" y1="10" x2="22" y2="22"/>
+<circle cx="12" cy="13" r="1.8"/>
+<polyline points="25,2 25,9"/>
+<polyline points="22,5 25,9 28,5"/>
+</g>
+</svg>
+<div class="lbl">Reference Image</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="3,10 10,3 10,10"/>
+<polyline points="3,10 3,25 25,25 25,10"/>
+<polyline points="21,3 21,10 10,10"/>
+</g>
+</svg>
+<div class="lbl">Import STEP</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="4,14 12,4 12,24 4,14"/>
+<line x1="12" y1="14" x2="26" y2="14"/>
+<polyline points="20,10 25,14 20,18"/>
+</g>
+</svg>
+<div class="lbl">Export STEP</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polygon points="4,18 15,24 15,9"/>
+<polygon points="15,24 26,17 15,9"/>
+<line x1="15" y1="24" x2="15" y2="9"/>
+</g>
+</svg>
+<div class="lbl">Export STL</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="14" cy="13" r="7"/>
+<polyline points="2,4 2,18 10,24 22,24 28,12 28,4"/>
+</g>
+</svg>
+<div class="lbl">Export OBJ</div></div><div class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30">
+<g stroke="#3d4552" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<polyline points="3,4 17,4 17,24 3,24"/>
+<polyline points="4,21 9,8 13,16 16,6"/>
+<circle cx="22" cy="15" r="3.2"/>
+</g>
+</svg>
+<div class="lbl">Export DXF</div></div></div></div>
+<div class="cap">UI preview rendered from resources/ribbon.json + resources/themes/light.json
+  + resources/icons/light (headless Chrome). Actual FreeCAD window may differ slightly.</div>
+</body></html>

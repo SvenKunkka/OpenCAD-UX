@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "note": "Shortcut presets. 'key' uses Qt notation where 'mod+' means Ctrl on Windows/Linux and Command on macOS (QKeySequence semantics; the dispatcher additionally accepts Meta on macOS). 'action' targets a canonical command id (see commands.adapters) or an OpenCAD UX python command name.",
+  "presets": {
+    "fusion_inspired": {
+      "label": { "en": "Fusion-inspired", "zh": "Fusion 风格快捷键" },
+      "shortcuts": [
+        { "action": "command_search", "key": "S", "label": { "en": "Command search", "zh": "命令搜索" } },
+        { "action": "line", "key": "L", "label": { "en": "Line", "zh": "直线" } },
+        { "action": "rectangle", "key": "R", "label": { "en": "Rectangle", "zh": "矩形" } },
+        { "action": "circle", "key": "C", "label": { "en": "Circle", "zh": "圆" } },
+        { "action": "dimension", "key": "D", "label": { "en": "Dimension", "zh": "尺寸标注" } },
+        { "action": "pad", "key": "E", "label": { "en": "Extrude/Pad", "zh": "拉伸" } },
+        { "action": "fillet", "key": "F", "label": { "en": "Fillet", "zh": "圆角" } },
+        { "action": "hole", "key": "H", "label": { "en": "Hole", "zh": "孔" } },
+        { "action": "transform", "key": "M", "label": { "en": "Move/Transform", "zh": "移动/变换" } },
+        { "action": "project", "key": "P", "label": { "en": "Project geometry", "zh": "投影几何" } },
+        { "action": "context_actions", "key": "Q", "label": { "en": "Context actions (Press/Pull-like)", "zh": "上下文操作(类似Press/Pull)" } },
+        { "action": "fit_all", "key": "Shift+F", "label": { "en": "Fit view", "zh": "适配视图" } },
+        { "action": "delete", "key": "Delete", "label": { "en": "Delete selection", "zh": "删除所选" } },
+        { "action": "cancel", "key": "Esc", "label": { "en": "Cancel current command", "zh": "取消当前命令" } },
+        { "action": "undo", "key": "mod+Z", "label": { "en": "Undo", "zh": "撤销" } },
+        { "action": "redo", "key": "mod+Shift+Z", "label": { "en": "Redo", "zh": "重做" } },
+        { "action": "save", "key": "mod+S", "label": { "en": "Save", "zh": "保存" } },
+        { "action": "open", "key": "mod+O", "label": { "en": "Open", "zh": "打开" } },
+        { "action": "new_document", "key": "mod+N", "label": { "en": "New document", "zh": "新建文档" } }
+      ]
+    }
+  }
+}
