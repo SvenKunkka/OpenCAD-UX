@@ -65,10 +65,13 @@ This is the honest boundary of automated GUI verification for the MVP.
 
 ## Result bookkeeping
 
-> Filled by `scripts/ci/test_matrix` or maintainer. Last run (this repo,
-> development machine):
->
-> - pure: OK (36/36)
-> - console: OK (25/25)
-> - static: OK
-> - examples: OK (3/3 + STEP/STL exported)
+Last full run on the development machine (macOS 26.6 arm64, FreeCAD 1.1.3
+2026-07 build, console `freecadcmd` with isolated `-u/-s` configs):
+
+| Suite | Result |
+|---|---|
+| pure (`run_pure_tests.sh`) | **OK – 36/36 passed** |
+| console (`run_console_tests.sh`) | **OK – 25/25 passed** |
+| static (`check_static.sh`) | **OK** (compileall, icon determinism, ribbon schema) |
+| examples (`run_examples.sh`) | **OK – 3/3 models + STEP/STL exported** |
+| GUI self-test (`OpencadUX_RunGuiSelftest`) | **not executed on this host** — the documented Qt/macOS accessibility crash (see `docs/DEVELOPMENT.md`) makes GUI pixel automation unreliable here; the in-GUI self-test command is provided for healthy machines. UI *preview* images in `docs/screenshots/` are rendered from the real config/icons via `scripts/make_preview.py` (headless Chrome). |
