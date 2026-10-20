@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # OpenCAD UX
 
 > A Fusion-inspired **Product Design workspace for FreeCAD**, focused on
@@ -200,3 +204,30 @@ bash scripts/check_static.sh        # syntax, icons sync, schema
 - No third-party runtime code is bundled. FreeCAD's own commands are invoked
   through its public APIs. See [docs/LICENSES.md](docs/LICENSES.md) for the
   list of *referenced* projects/patterns (not copied) and their licenses.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+面向消费电子 ID 与结构设计的 FreeCAD Python 工作台，整合 Ribbon、双语命令搜索、上下文操作、参考图和主题，通过 FreeCAD 公开 API 与标准命令执行建模。
+
+**使用入口：** 手动安装流程见原 README，可使用 `bash scripts/install.sh`；安装后选择 Product Design (OpenCAD UX)。中文详见 [README.zh-CN.md](README.zh-CN.md)。
+
+**范围说明：** 当前为 0.1.0 MVP，原记录在 macOS arm64、FreeCAD 1.1.3 开发，GUI 仅部分验证；不提供完整 Fusion 操作等价，具体限制见 Known limits。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A FreeCAD Python workbench for consumer-electronics industrial and mechanical design, combining a ribbon, bilingual command search, context actions, reference images, and themes through FreeCAD public APIs and standard commands.
+
+**Getting started:** Follow the manual installation guide or use `bash scripts/install.sh`, then select Product Design (OpenCAD UX). Chinese documentation is in [README.zh-CN.md](README.zh-CN.md).
+
+**Scope:** Version 0.1.0 is an MVP developed against FreeCAD 1.1.3 on macOS arm64, with only partial GUI verification recorded. It does not provide full Fusion interaction parity; see Known limits.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->

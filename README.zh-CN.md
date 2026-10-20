@@ -100,3 +100,10 @@ bash scripts/check_static.sh        # 语法、图标一致性、ribbon 结构
 许可与图标归属：代码 GPL-3.0-or-later（见 LICENSE）；全部图标为本项目原创生成
 （`scripts/make_icons.py`），不含 Autodesk 等第三方专有资产；未捆绑任何第三方
 运行时代码，详见 docs/LICENSES.md。
+
+
+<!-- SVENKUNKKA-CONTACT:BEGIN -->
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-CONTACT:END -->
